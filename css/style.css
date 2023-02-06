@@ -127,3 +127,24 @@ section,footer{
         padding: 3.125rem;
     }
 }
+/* STRATEGIC PLANS */
+#strategic-plans{
+    background-color: var(--secondary-color);
+}
+#strategic-plans .container {
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.txt-content{
+    padding: 1.25rem;
+}
+#strategic-plans img{
+    padding: 1.875rem;
+}
+ .white-bg{
+background-color: white;
+border: 1px solid white;
+border-radius: 1.25rem;
+padding: .9375rem;
+}
