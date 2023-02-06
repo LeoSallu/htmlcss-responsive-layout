@@ -19,14 +19,44 @@
 .just-between{
     justify-content: space-between;
 }
+a{
+    text-decoration: none;
+}
+.middle{
+    align-items: center;
+}
+.desktop-menu, .menu, .inline-ulist li a{
+    color: white;
+}
 .inline-ulist{
     display: flex;
     list-style: none;
 }
+.inline-ulist li {
+    padding: .625rem;
+}
 img{
     width: 100%;
 }
-                /* MAIN  */
+                /* BUTTON  */
+#menu-btn{
+    color:black ;
+    background-color: white;
+    padding: .625rem; 
+    border: 1px solid white;
+    border-radius: 15px;
+}
+                /* HEADER  */
 header{
     background-color: var(--first-color);
+}
+@media screen and (max-width: 768px) {
+    .desktop-menu{
+        display: none;
+    }
+}
+@media screen and (min-width: 769px) {
+    header .menu{
+        display: none;
+    }
 }
