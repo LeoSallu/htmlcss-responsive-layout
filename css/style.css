@@ -1,0 +1,32 @@
+                /* RESET  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+                /* UTILITY */
+:root{
+    --first-color: #0084fd;
+    --first-color-light: #b5ddff;
+    --secondary-color: #9792e4;
+}
+.container{
+    padding: 1.25rem;
+}
+.flex{
+    display: flex;
+}
+.just-between{
+    justify-content: space-between;
+}
+.inline-ulist{
+    display: flex;
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+                /* MAIN  */
+header{
+    background-color: var(--first-color);
+}
