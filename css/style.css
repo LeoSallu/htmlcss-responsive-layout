@@ -216,12 +216,18 @@ text-align: center;
 #benefits{
     background-color: var(--secondary-color);
 }
+.container-cards{
+    flex-direction: column;
+    align-items: center;
+}
 .cards-container{
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     background-color: white;
     border: 1px solid white;
     border-radius: 1.25rem;
-    padding: .9375rem;
+    padding: 3.125rem .625rem;
     margin: .625rem;
 }
 .cards-container h2, .cards-container h3 {
@@ -234,13 +240,24 @@ font-size: 1.875rem;
 #benefits .txt-content h3 {
     color: white;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px){
+    main #benefits .container-cards .cards-container {
+        width: calc(100% / 3);
+    } 
     .container-cards{
-    flex-direction: row;
-    flex-wrap: wrap;;
-    }
-    .cards-container{
-        width: calc(100% / 2 - .625rem);
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
+    @media screen and (min-width: 992px){
+        main #benefits .container-cards .cards-container {
+            width: calc(100% / 4);
+        } 
+        .container-cards{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }    
+    }
 /* BENEFITS */
