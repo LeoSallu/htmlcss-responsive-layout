@@ -73,6 +73,15 @@ img{
     padding: .3125rem .625rem;
     margin: 10px;
 }
+.btn-prp{
+    background-color: var(--secondary-color);
+    color: white;
+    padding: .3125rem;
+    width: 9.375rem;
+    text-align: center;
+    border: .0625rem solid var(--secondary-color);
+    border-radius: 1.25rem;
+}
                 /* HEADER */
 header{
     background-color: var(--first-color);
@@ -202,3 +211,36 @@ text-align: center;
     }
 }
 /* /TESTIMONIALS */
+
+/* BENEFITS */
+#benefits{
+    background-color: var(--secondary-color);
+}
+.cards-container{
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 1.25rem;
+    padding: .9375rem;
+    margin: .625rem;
+}
+.cards-container h2, .cards-container h3 {
+color: var(--secondary-color);
+font-size: 1.875rem;
+}
+.cards-container p{
+    padding: 1.25rem;
+}
+#benefits .txt-content h3 {
+    color: white;
+}
+@media screen and (min-width:768px) {
+    .container-cards{
+    flex-direction: row;
+    flex-wrap: wrap;;
+    }
+    .cards-container{
+        width: calc(100% / 2 - .625rem);
+    }
+}
+/* BENEFITS */
