@@ -45,6 +45,18 @@ img{
     padding: .625rem;
     color: gray;
 }
+.txt-content{
+    padding: 1.25rem;
+    text-align: center;
+}
+.txt-cards{
+    color: white;
+    text-align: center;
+}
+.prp-txt{
+    color: var(--secondary-color);
+    padding: .625rem;
+}
                 /* BUTTON */
 #menu-btn{
     color:black ;
@@ -133,11 +145,7 @@ section,footer{
 }
 #strategic-plans .container {
     flex-direction: column;
-    text-align: center;
     color: white;
-}
-.txt-content{
-    padding: 1.25rem;
 }
 #strategic-plans img{
     padding: 1.875rem;
@@ -147,4 +155,50 @@ background-color: white;
 border: 1px solid white;
 border-radius: 1.25rem;
 padding: .9375rem;
+color: black;
+text-align: center;
 }
+@media screen and (min-width:768px) {
+    #strategic-plans .container{
+        flex-direction: row;
+        align-items: center;
+    }
+    #strategic-plans .container div{
+        width: calc(100% /3);
+    }
+}
+/* /STRATEGIC PLANS */
+
+/* TESTIMONIALS */
+.cards{
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 1.25rem;
+    margin: 1.25rem;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.cards .txt-content{
+    width: 50%;
+    color: white;
+}
+.cards .img{
+    width: 50%;
+}
+.cards .img img{
+    border: 1px white;
+    border-radius: 100%;
+}
+@media screen and (min-width:768px) {
+    .cards{
+        flex-direction: row;
+    }
+    .cards .txt-cards{
+        width: 70%;
+    }
+    .cards .img{
+        width: 30%;
+    }
+}
+/* /TESTIMONIALS */
