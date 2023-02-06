@@ -261,3 +261,30 @@ font-size: 1.875rem;
         }    
     }
 /* BENEFITS */
+
+/* ABOUT US */
+.container-col{
+    flex-direction: column;
+    text-align: left;
+}
+.container-col .text-col h2{
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 1.875rem;
+    padding-bottom: 1.5625rem;
+}
+.container-col .text-col p{
+    padding: 1.25rem;
+}
+.cont-col-img{
+    width: 30%;
+    border: 1px white;
+    border-radius: 100%;
+}
+.cont-col-img img{
+    border: 1px white;
+    border-radius: 100%;
+}
+span{
+    padding: 5px;
+}
